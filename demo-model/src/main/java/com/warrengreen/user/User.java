@@ -1,6 +1,7 @@
 package com.warrengreen.user;
 
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import com.warrengreen.address.Address;
 
@@ -14,5 +15,6 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private int age;
+	@ManyToOne
 	private Address address;
 }
